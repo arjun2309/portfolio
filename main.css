@@ -241,11 +241,13 @@ body{
   font-weight: 800;
   margin-bottom: 20px;
   color: white;
+  text-align: center;
 }
 
 .about .content .col-right .paragraph-text{
   font-size: 1em;
   color: white;
+  text-align: center;
 }
 
 .skills{
@@ -264,6 +266,7 @@ body{
 .skills .content .col-left{
   position: relative;
   width: 46%;
+  text-align: center;
 }
 
 .skills .content .col-left .content-title{
@@ -340,18 +343,21 @@ body{
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 20px;
+  
 }
-.title h3{
- position: absolute;
+.title h4{
+ /* position: absolute; */
  top:80px;
- left: 115px;
+ /* left: 115px; */
   color: #f4563a;
+  text-align: center;
 }
 
 .title p{
   font-size: 1em;
   width: 80%;
   color: white;
+  text-align: center;
   
 }
 
@@ -399,6 +405,7 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 20px;
+  text-align: center;
 }
 
 .projects .content .card{
@@ -418,7 +425,7 @@ body{
 .projects .content .card .card-img img{
   position: absolute;
   top: 0;
-  left: 0;
+  left: 30px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -709,7 +716,7 @@ text-decoration: none;
 
 }
 
-.scrollToTop-btn{
+/* .scrollToTop-btn{
   z-index: 999;
   position: fixed;
   background: #b10707;
@@ -744,4 +751,4 @@ text-decoration: none;
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
-}
+} */
