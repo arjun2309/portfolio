@@ -607,7 +607,7 @@ text-decoration: none;
   opacity: 1;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   body {
     overflow-x: hidden;
   }
@@ -723,7 +723,7 @@ text-decoration: none;
     padding: 1em;
   }
 }
-@media (min-width: 481px) and (max-width: 1024px) {
+/* @media (min-width: 481px) and (max-width: 1024px) {
   header {
     padding: 15px 50px;
   }
@@ -775,4 +775,4 @@ text-decoration: none;
   .footer {
     padding: 2em 50px;
   }
-}
+} */
