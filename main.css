@@ -129,6 +129,10 @@ header .brand{
   text-transform: uppercase;
   text-decoration: none;
 }
+header .menu-btn .fas{
+ display: none;
+  
+}
 
 header .navigation{
   position: relative;
@@ -565,6 +569,9 @@ text-decoration: none;
 }
 
 @media (max-width: 1040px){
+  body{
+    overflow-x: hidden;
+  }
   header{
     padding: 12px 20px;
   }
@@ -573,8 +580,12 @@ text-decoration: none;
     padding: 10px 20px;
   }
 
-  header .navigation{
+  header .navigation {
     display: none;
+    background-color: #f4f4f4;
+  }
+  header .navigation .fas{
+    background-color: #f4f4f4;
   }
 
   header .navigation.active{
@@ -589,12 +600,12 @@ text-decoration: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
     transition: 0.3s ease;
   }
 
   header .navigation a{
-    color: #000;
+    color: #ff0404;
     font-size: 1.2em;
     margin: 10px;
     padding: 0 20px;
@@ -606,7 +617,13 @@ text-decoration: none;
     color: #fff;
     transition: 0.3s ease;
   }
-
+   
+  header .menu-btn .fas{
+    color: rgb(255, 255, 255);
+    font-size:x-large;
+    display: inline;
+    
+  }
   .menu-btn{
     position: absolute;
     background: url(images/menu.png)no-repeat;
@@ -658,6 +675,14 @@ text-decoration: none;
     margin-top: 40px;
   }
 
+  .about .content .col-left .img-card img{
+    position: absolute;
+    top: 0px;
+    left: -150px;
+    width: 120%;
+    height: 100%;
+  }
+  
   .skills .content{
     flex-direction: column;
   }
@@ -671,9 +696,17 @@ text-decoration: none;
     margin-top: 40px;
   }
 
+  .title h3{
+    position: absolute;
+    left: 45px;
+  }
+  .projects .content .card .card-img img{
+    width: 80%;
+  }
   .contact-form{
     padding: 35px 40px;
   }
+
 }
 
 .scrollToTop-btn{
