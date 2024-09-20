@@ -567,8 +567,101 @@ text-decoration: none;
   font-weight: 600;
   text-decoration: none;
 }
-
 @media (max-width: 480px){
+  body{
+    overflow-x: hidden;
+  }
+  
+  header{
+    padding: 12px 20px;
+  }
+
+  header.sticky{
+    padding: 10px 20px;
+  }
+
+  header .navigation {
+    display: none;
+    background-color: #f4f4f4;
+  }
+
+  header .navigation.active{
+    z-index: 888;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+  }
+
+  header .menu-btn .fas{
+    font-size: x-large;
+    display: inline;
+  }
+
+  .menu-btn{
+    background-size: 30px;
+  }
+
+  section{
+    padding: 80px 20px;
+  }
+
+  .main .content h2{
+    font-size: 1.4em;
+  }
+
+  .animated-text h3{
+    font-size: 2em;
+  }
+
+  .section-title{
+    font-size: 1.8em;
+  }
+
+  .about .content{
+    flex-direction: column;
+  }
+
+  .about .content .col-left,
+  .about .content .col-right {
+    width: 100%;
+  }
+
+  .skills .content{
+    flex-direction: column;
+  }
+
+  .skills .content .col-left,
+  .skills .content .col-right {
+    width: 100%;
+  }
+
+  .projects .content .card{
+    width: 100%;
+  }
+
+  .contact-form{
+    padding: 20px 20px;
+  }
+
+  .footer{
+    padding: 1.5em;
+  }
+
+  .footer p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px){
   body{
     overflow-x: hidden;
   }
